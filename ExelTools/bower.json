@@ -1,0 +1,13 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "metisMenu": "~2.6.1",
+    "jquery": "2.2.4",
+    "raphael": "~2.2.7",
+    "bootstrap": "~3.3.7"
+
+
+  }
+}
