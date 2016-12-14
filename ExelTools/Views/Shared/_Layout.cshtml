@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Exel Wines - @ViewBag.Title</title>
+    <title>BI Tools - @ViewBag.Title</title>
 
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="~/lib/metisMenu/dist/metisMenu.css" rel="stylesheet" />
@@ -38,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Exel Wines @ViewBag.Title</a>
+                <a asp-controller="App" asp-action="Index" class="navbar-brand">Exel Wines - BI Tools</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -270,34 +270,25 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                             <a asp-controller="App" asp-action="Index"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Sales<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a asp-controller="App" asp-action="Sales"><i class="fa fa-bar-chart-o fa-fw"></i> Sales</a>
                         </li>
                         <li>
-                            <a href="tables.html"><i class="fa fa-shopping-cart fa-fw"></i> Customers</a>
+                            <a asp-controller="App" asp-action="Customers"><i class="fa fa-shopping-cart fa-fw"></i> Customers</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-glass fa-fw"></i> Products</a>
+                            <a asp-controller="App" asp-action="Products"><i class="fa fa-glass fa-fw"></i> Products</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-truck fa-fw"></i> Suppliers</a>
+                            <a asp-controller="App" asp-action="Suppliers"><i class="fa fa-truck fa-fw"></i> Suppliers</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-globe fa-fw"></i> Traffic</a>
+                            <a asp-controller="App" asp-action="Traffic"><i class="fa fa-globe fa-fw"></i> Traffic</a>
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-envelope fa-fw"></i> Campaigns</a>
+                            <a asp-controller="App" asp-action="Campaigns"><i class="fa fa-envelope fa-fw"></i> Campaigns</a>
                         </li>
 
                     </ul>
@@ -309,106 +300,15 @@
 
         <!--Body-->
 
-        <div id="page-wrapper">
-            <!-- Shortcuts -->
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-bar-chart fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div>Sales</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>Customers</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-glass fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>Products</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-truck fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Suppliers</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- /Shortcuts -->
+    <div id="page-wrapper">
+        <h2>@ViewBag.Title</h2>
 
 
         @RenderBody()
 
 
 
-        </div>
+    </div>
         <!-- /#page-wrapper -->
 
     </div>

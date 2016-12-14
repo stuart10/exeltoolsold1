@@ -42,19 +42,22 @@ $(function() {
 });
 
 
+//Exel Wines Additions
 (function () {
 
-    console.log("startup");
+    $('#btnWebPublish').on('click', function (e) {
 
-    var main = document.getElementsByClassName("panel-heading");
+        window.location.href = "/App/UpdateWebProducts";
+    });
 
-    main.onmouseenter = function() {
-        console.log("Hi!!");
-    };
+    //var ele = $("div.tablixDiv");
 
-    main.onmouseleave = function() {
-        console.log("Out");
-    };
+    //ele.css("color", "#fa2a00");
+
+    //ele.css("fontSize", "20px");
+
+    //console.log(ele);
+
 
 })();
 

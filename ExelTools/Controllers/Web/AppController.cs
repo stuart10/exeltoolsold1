@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace ExelTools.Controllers.Web
 {
@@ -13,5 +8,41 @@ namespace ExelTools.Controllers.Web
         {
             return View();
         }
+
+        public IActionResult Sales()
+        {
+            return View();
+        }
+
+        public IActionResult Customers()
+        {
+            return View();
+        }
+
+        public IActionResult Products()
+        {
+            return View();
+        }
+
+        public IActionResult Suppliers()
+        {
+            return View();
+        }
+        public IActionResult Traffic()
+        {
+            return View();
+        }
+        public IActionResult Campaigns()
+        {
+            return View();
+        }
+
+        public IActionResult UpdateWebProducts()
+        {
+            return View();
+        }
+
+
+     
     }
 }

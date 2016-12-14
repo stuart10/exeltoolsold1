@@ -440,3 +440,12 @@ table.dataTable thead .sorting:after {
         border-top: 1px solid #e7e7e7;
         text-align: center;
 }
+
+.tablixContainer {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.exel-btn-group {
+    margin-left: 25px;
+}
